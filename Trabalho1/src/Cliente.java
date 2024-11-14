@@ -3,12 +3,15 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Cliente {
+	int max =10;
     private String nome;
     private String CPF;
     private double multa;
-    List<String> LivrosEmprestados;
+    List<String> LivrosEmprestados = new ArrayList<>();;
     private TipoCliente tipo;
     Scanner scanner = new Scanner(System.in);
+    List<dataDevolucao> datas = new ArrayList<>();;
+  
 
    
     public Cliente(String nome, String CPF, double multa, TipoCliente tipo, List<String> livrosEmprestados) {
@@ -102,4 +105,7 @@ public class Cliente {
         System.out.println("Multa: R$ " + getMulta());
         System.out.println("Livros Emprestados: " + (LivrosEmprestados.isEmpty() ? "Nenhum" : LivrosEmprestados));
     }
+
+
+
 }

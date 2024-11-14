@@ -53,8 +53,11 @@ public class Livro {
 	public void setExemplares(int exemplares) {
 		this.exemplares = exemplares;
 	}
-	public void contadorExemplares(int contador) {
+	public void decrementarExemplares(int contador) {
 		exemplares = exemplares - contador;
+	}
+	public void incrementarExemplares(int contador) {
+		exemplares = exemplares + contador;
 	}
 	public void AddLivro() {
 		
@@ -88,5 +91,13 @@ public class Livro {
 	            setGenero(GeneroLivro.FICCAO);
 	        }
 	    }
-	
+	public void exibirInfo() {
+        System.out.println("Nome: " + getTitulo());
+        System.out.println("Autor: " + getAutor());
+        System.out.println("Genero: " + getGenero());
+        System.out.println("Ano de publicação " + getAnoPublicacao());
+        System.out.println("Exemplares: " + getExemplares());
+    }
+
+
 }

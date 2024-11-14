@@ -35,38 +35,38 @@ public class Bibliotecaapp {
 
                 case 3:
                     System.out.println("\n=== Realizar Empréstimo ===");
-                    
+                    biblioteca.emprestimo();
                    
                     break;
 
                 case 4:
                     System.out.println("\n=== Realizar Devolução ===");
-
+                    biblioteca.devolucao();
                     break;
 
                 case 5:
                     System.out.println("\n=== Consultar Multas ===");
-
+                    biblioteca.consultarMultas();
                     break;
 
                 case 6:
                     System.out.println("\n=== Pagar Multa ===");
-
+                    biblioteca.pagarMulta();
                     break;
 
                 case 7:
                     System.out.println("\n=== Listar Livros ===");
-
+                    biblioteca.listarLivros();
                     break;
 
                 case 8:
                     System.out.println("\n=== Listar Clientes ===");
-
+                    biblioteca.listarUsurarios();
                     break;
 
                 case 9:
                     System.out.println("\n=== Pesquisar Livro por Título ou Autor ===");
-
+                    biblioteca.BuscarLivro();
                     break;
 
                 case 10:
